@@ -1,3 +1,5 @@
+package circus;
+
 public class Circus {
     // Declare bunch of animal.
     private static Animal[] animals = {

@@ -19,8 +19,10 @@ public class Trainer {
         // Parrot doesn't have a swim method. You are asking parrot to swim... It will die...
         // train(new Parrot()); // No errors as Parrot is a bird since the train() expects a bird as you build project. However,you will get classcast exception when you run it. Class parrot cannot be cast to class duck even though they are child class of a bird, you cannot anyhow do casting.
         // Basically things must be in relation to the inheritance hierarchy and underlying object supports whatever behaviour respectively.
-        Parrot p1 = (Parrot) b;
-        p1.speak();
+
+        // This also doesn't work...
+        // Parrot p1 = (Parrot) b;
+        // p1.speak();
 
         Animal a2 = new Animal();
         Bird b2 = new Bird();
@@ -35,8 +37,12 @@ public class Trainer {
     private static void train(Bird bird) {
         // Training the bird to do swimming. But swimming is only defined for a duck...
         // So we did a downcasting bird to duck and ask it to swim.
-        Duck d = (Duck) bird;
-        // d.speak();
-        d.swim();
+        if (bird instanceof Duck) { // Will prevent errors...
+            Duck d = (Duck) bird;
+            // d.speak();
+            d.swim();
+        } else{
+            System.out.println("NOT A DUCCC");
+        }
     }
 }

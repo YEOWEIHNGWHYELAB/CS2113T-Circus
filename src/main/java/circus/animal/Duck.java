@@ -8,7 +8,7 @@ public class Duck extends Bird {
 
     @Override
     public int getValue() {
-        return 0;
+        return 10;
     }
 
     @Override // If you remove this, it will print the memory address of this object instead!

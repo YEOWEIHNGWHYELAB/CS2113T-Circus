@@ -24,8 +24,8 @@ public class Trainer {
         // Parrot p1 = (Parrot) b;
         // p1.speak();
 
-        Animal a2 = new Animal();
-        Bird b2 = new Bird();
+        // Animal a2 = new Animal();
+        // Bird b2 = new Bird();
     }
 
     // getToSpeak is expecting a animal reference. But you are giving it a type of duck.

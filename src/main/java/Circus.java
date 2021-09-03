@@ -26,7 +26,8 @@ public class Circus {
                 System.out.println("Ignoring low value item: " + e.getValue());
             } else {
                 total += e.getValue();
-                System.out.println("Adding item value: " + e.getValue());
+                System.out.println("Adding item value: " + e.getValue(animals));
+                System.out.println("Total value of equipments " + calculateValue(equipments));
                 // some 
                 // more
                 // code 

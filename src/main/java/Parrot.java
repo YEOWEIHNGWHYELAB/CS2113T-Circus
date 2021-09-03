@@ -3,6 +3,10 @@ public class Parrot extends Bird {
     public String speak() {
         return "Polly wants a cracker";
     }
+    @Override
+    public int getValue() {
+        return 20;
+    }
 
     @Override
     public String toString() {

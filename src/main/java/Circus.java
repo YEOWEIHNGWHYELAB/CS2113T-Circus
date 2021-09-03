@@ -19,15 +19,14 @@ public class Circus {
         }
     }
 
-    private static int calculateValue(Equipment[] equipments) {
+    private static int calculateValue(Asset[] assets) {
         int total = 0;
-        for (Equipment e : equipments) {
-            if (e.getValue() <= 5) {
-                System.out.println("Ignoring low value item: " + e.getValue());
+        for (Asset asset : assets) {
+            if (asset.getValue() <= 5) {
+                System.out.println("Ignoring low value item: " + asset.getValue());
             } else {
-                total += e.getValue();
-                System.out.println("Adding item value: " + e.getValue(animals));
-                System.out.println("Total value of equipments " + calculateValue(equipments));
+                total += asset.getValue();
+                System.out.println("Adding item value: " + asset.getValue());
                 // some 
                 // more
                 // code 
@@ -39,6 +38,7 @@ public class Circus {
 
     public static void main(String[] args) {
         makeAnimalsTalk();
+        System.out.println("Total value of animals: " + calculateValue(animals));
         System.out.println("Total value of equipments " + calculateValue(equipments));
     }
 }

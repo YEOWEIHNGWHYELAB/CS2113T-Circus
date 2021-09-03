@@ -1,8 +1,8 @@
-public abstract class Animal {
+public abstract class Animal implements Asset {
 
     public abstract String speak();
 
-    public int getValue() {
-        return 10;
-    }
+    // public int getValue() {
+        // return 10;
+    // }
 }

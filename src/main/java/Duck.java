@@ -4,6 +4,11 @@ public class Duck extends Bird {
         return "Quack Quack";
     }
 
+    @Override
+    public int getValue() {
+        return 0;
+    }
+
     @Override // If you remove this, it will print the memory address of this object instead!
     public String toString() {
         return "I'm a Duck";

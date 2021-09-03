@@ -1,5 +1,9 @@
 package circus;
 
+import circus.animal.Animal;
+import circus.animal.Duck;
+import circus.animal.Parrot;
+
 public class Circus {
     // Declare bunch of animal.
     private static Animal[] animals = {

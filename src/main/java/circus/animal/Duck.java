@@ -1,4 +1,4 @@
-package circus;
+package circus.animal;
 
 public class Duck extends Bird {
     @Override // Redefining the speak method in Animal as Bird (superclass) of this no have speak().
